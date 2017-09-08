@@ -15,6 +15,11 @@
 		1B38A3C51F61999900CA44BA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3C41F61999900CA44BA /* Person.swift */; };
 		1B38A3CA1F619A3200CA44BA /* PersonDetailsSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3C91F619A3200CA44BA /* PersonDetailsSectionViewModel.swift */; };
 		1B38A3CC1F619A4600CA44BA /* PersonDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3CB1F619A4600CA44BA /* PersonDetailsCellViewModel.swift */; };
+		1B38A3D01F62937E00CA44BA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3CF1F62937E00CA44BA /* AppCoordinator.swift */; };
+		1B38A3D51F6295C500CA44BA /* PersonListTableViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3D41F6295C500CA44BA /* PersonListTableViewcontroller.swift */; };
+		1B38A3D71F629FB100CA44BA /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3D61F629FB100CA44BA /* PersonListViewModel.swift */; };
+		1B38A3DB1F62AEBD00CA44BA /* PersonListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3DA1F62AEBD00CA44BA /* PersonListCellViewModel.swift */; };
+		1B38A3DE1F62B22400CA44BA /* PersonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38A3DD1F62B22400CA44BA /* PersonListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		1B38A3C41F61999900CA44BA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1B38A3C91F619A3200CA44BA /* PersonDetailsSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsSectionViewModel.swift; sourceTree = "<group>"; };
 		1B38A3CB1F619A4600CA44BA /* PersonDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsCellViewModel.swift; sourceTree = "<group>"; };
+		1B38A3CF1F62937E00CA44BA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1B38A3D41F6295C500CA44BA /* PersonListTableViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewcontroller.swift; sourceTree = "<group>"; };
+		1B38A3D61F629FB100CA44BA /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
+		1B38A3DA1F62AEBD00CA44BA /* PersonListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListCellViewModel.swift; sourceTree = "<group>"; };
+		1B38A3DD1F62B22400CA44BA /* PersonListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 		1B38A3A81F61454200CA44BA /* TableMVVM-Example */ = {
 			isa = PBXGroup;
 			children = (
+				1B38A3DC1F62B14F00CA44BA /* Cells */,
+				1B38A3CE1F62936700CA44BA /* Coordinators */,
 				1B38A3BF1F6145E000CA44BA /* Models */,
 				1B38A3BE1F6145C500CA44BA /* View Controllers */,
 				1B38A3BD1F6145BF00CA44BA /* View Models */,
@@ -74,7 +86,8 @@
 		1B38A3BD1F6145BF00CA44BA /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				1B38A3CD1F619A4900CA44BA /* Person Details */,
+				1B38A3D11F62950F00CA44BA /* Person List View Models */,
+				1B38A3CD1F619A4900CA44BA /* Person Details View Models */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -82,7 +95,8 @@
 		1B38A3BE1F6145C500CA44BA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B38A3C01F61997900CA44BA /* PersonDetailsViewController.swift */,
+				1B38A3D31F62959F00CA44BA /* Person List */,
+				1B38A3D21F62959900CA44BA /* Person Details */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -119,14 +133,71 @@
 			path = PersonDetailsCellViewModel;
 			sourceTree = "<group>";
 		};
-		1B38A3CD1F619A4900CA44BA /* Person Details */ = {
+		1B38A3CD1F619A4900CA44BA /* Person Details View Models */ = {
 			isa = PBXGroup;
 			children = (
 				1B38A3C61F6199C700CA44BA /* PersonDetailsViewModel */,
 				1B38A3C71F6199E200CA44BA /* PersonDetailsSectionViewModel */,
 				1B38A3C81F6199F800CA44BA /* PersonDetailsCellViewModel */,
 			);
+			path = "Person Details View Models";
+			sourceTree = "<group>";
+		};
+		1B38A3CE1F62936700CA44BA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A3CF1F62937E00CA44BA /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1B38A3D11F62950F00CA44BA /* Person List View Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A3D91F62AE9E00CA44BA /* Person List Cell View Model */,
+				1B38A3D81F62AE8600CA44BA /* Person List View Model */,
+			);
+			path = "Person List View Models";
+			sourceTree = "<group>";
+		};
+		1B38A3D21F62959900CA44BA /* Person Details */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A3C01F61997900CA44BA /* PersonDetailsViewController.swift */,
+			);
 			path = "Person Details";
+			sourceTree = "<group>";
+		};
+		1B38A3D31F62959F00CA44BA /* Person List */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A3D41F6295C500CA44BA /* PersonListTableViewcontroller.swift */,
+			);
+			path = "Person List";
+			sourceTree = "<group>";
+		};
+		1B38A3D81F62AE8600CA44BA /* Person List View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A3D61F629FB100CA44BA /* PersonListViewModel.swift */,
+			);
+			path = "Person List View Model";
+			sourceTree = "<group>";
+		};
+		1B38A3D91F62AE9E00CA44BA /* Person List Cell View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A3DA1F62AEBD00CA44BA /* PersonListCellViewModel.swift */,
+			);
+			path = "Person List Cell View Model";
+			sourceTree = "<group>";
+		};
+		1B38A3DC1F62B14F00CA44BA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B38A3DD1F62B22400CA44BA /* PersonListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +271,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B38A3D51F6295C500CA44BA /* PersonListTableViewcontroller.swift in Sources */,
 				1B38A3CC1F619A4600CA44BA /* PersonDetailsCellViewModel.swift in Sources */,
 				1B38A3C31F61998F00CA44BA /* PersonDetailsViewModel.swift in Sources */,
 				1B38A3CA1F619A3200CA44BA /* PersonDetailsSectionViewModel.swift in Sources */,
 				1B38A3C11F61997900CA44BA /* PersonDetailsViewController.swift in Sources */,
+				1B38A3DB1F62AEBD00CA44BA /* PersonListCellViewModel.swift in Sources */,
 				1B38A3C51F61999900CA44BA /* Person.swift in Sources */,
 				1B38A3AA1F61454200CA44BA /* AppDelegate.swift in Sources */,
+				1B38A3D01F62937E00CA44BA /* AppCoordinator.swift in Sources */,
+				1B38A3DE1F62B22400CA44BA /* PersonListCell.swift in Sources */,
+				1B38A3D71F629FB100CA44BA /* PersonListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DRC2HPV8MW;
 				INFOPLIST_FILE = "TableMVVM-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "silverio.flavio.TableMVVM-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DRC2HPV8MW;
 				INFOPLIST_FILE = "TableMVVM-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "silverio.flavio.TableMVVM-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";

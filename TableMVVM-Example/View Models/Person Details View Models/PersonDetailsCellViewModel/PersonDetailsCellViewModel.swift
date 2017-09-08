@@ -11,7 +11,13 @@ import Foundation
 struct PersonDetailsCellViewModel {
     
     var cellDetail : String?
-    var cellTitle : String?
+    var cellTitle : String!
     
+    init(withTitle t: String?, andDetail d: String?) {
+        
+        cellTitle = t
+        cellDetail = d
+        
+    }
     
 }
